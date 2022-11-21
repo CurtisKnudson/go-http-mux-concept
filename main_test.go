@@ -1,4 +1,4 @@
-package main
+package main_test
 
 import (
 	"bytes"
@@ -9,9 +9,11 @@ import (
 	"os"
 	"strconv"
 	"testing"
+
+	main "github.com/CurtisKnudson/go-http-mux-concept"
 )
 
-var a App
+var a main.App
 
 func TestMain(m *testing.M) {
 	a.Initialize(
